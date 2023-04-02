@@ -40,8 +40,9 @@ while (True):
         if (produkt['pris'] + summa <= budget):
             # Lägg till produkten i varukorg
             varukorg.append(produkt)
-            # Efter att ha lagt till en vara, bryt for loopen
-            # och återgå till while loopen
+            # Efter att ha lagt till en vara, bryt _for_ loopen
+            # och återgå till _while_ loopen så den kan räkna om
+            # allt igen och börja om på nytt!
             break 
 
 print('Din påse är klar och kostar {0} kr'.format(summa))
